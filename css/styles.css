@@ -16,11 +16,6 @@ img {
     height: auto;
 }
 
-.container {
-    width: 95%;
-    margin: 0 auto;
-}
-
 /* ============ button ============= */
 
 .button {
@@ -45,7 +40,7 @@ header{
     position: absolute;
     left: 0;
     right: 0;
-    margin-top: 1em;
+    margin: 1em;
 }
 
 nav ul {
@@ -69,7 +64,9 @@ nav a {
 nav a:focus , a:hover {
     color: #ddd;
 }
+
 /* ============= typography ========= */
+
 .title {
     margin-bottom: 2em;
     font-weight: 600;
@@ -82,12 +79,40 @@ nav a:focus , a:hover {
     font-size: 0.8em;
 }
 
+/* =========== media query ========== */
+
+@media(min-width: 60rem)
+{
+    .title {
+        font-size: 3.7rem;
+    }
+    .logo {
+        float: left;
+    }
+    nav {
+        float: right;
+    }
+    .home-hero {
+        height: 100vh;
+    }
+
+    .button {
+        font-size: 1.5rem;
+    }
+}
 
 /* ============= home-hero ========== */
 
 .home-hero {
     background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
     padding: 10em 0;
     color: #fff;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
 }
 
