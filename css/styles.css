@@ -51,6 +51,19 @@ nav a {
 nav a:focus , a:hover {
     color: #ddd;
 }
+/* ============= typography ========= */
+.title {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.title span {
+    font-weight: 300;
+    display: block;
+    font-size: 0.8em;
+}
+
 
 /* ============= home-hero ========== */
 
