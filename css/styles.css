@@ -20,7 +20,25 @@ img {
     width: 95%;
     margin: 0 auto;
 }
- 
+
+/* ============ button ============= */
+
+.button {
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5em 1.75em;
+    border: 2px solid #00ff6c;
+}
+
+.button-accent {
+    color: #00ff6c;
+}
+.button-accent:hover, .button-accent:focus {
+    color: #232323;
+    background: #00ff6c;
+}
+
 /* =========== header =========== */
 
 header{
@@ -53,9 +71,9 @@ nav a:focus , a:hover {
 }
 /* ============= typography ========= */
 .title {
+    margin-bottom: 2em;
     font-weight: 600;
     font-size: 2rem;
-    color: #fff;
 }
 
 .title span {
@@ -70,5 +88,6 @@ nav a:focus , a:hover {
 .home-hero {
     background-image: url(../img/hero-bg.jpg);
     padding: 10em 0;
+    color: #fff;
 }
 
