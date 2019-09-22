@@ -317,3 +317,18 @@ nav a:focus , a:hover {
 .title-cta {
     margin: 0 0 0.5em ;
 }
+
+/* =========== footer ============ */
+
+footer {
+    background: #232323;
+    color: #fff;
+    text-align: left;
+    padding: 5em 0;
+}
+.unstyled-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
