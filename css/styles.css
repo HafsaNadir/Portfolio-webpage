@@ -16,6 +16,27 @@ img {
     height: auto;
 }
 
+h1 {
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+p:last-of-type{
+    margin-bottom: 0;
+}
+
+.container {
+    width: 95%;
+    max-width: 70em;
+    margin: 0 auto;
+}
+
 /* ============ button ============= */
 
 .button {
@@ -29,6 +50,7 @@ img {
 .button-accent {
     color: #00ff6c;
 }
+
 .button-accent:hover, .button-accent:focus {
     color: #232323;
     background: #00ff6c;
@@ -71,6 +93,7 @@ nav a:focus , a:hover {
     margin-bottom: 2em;
     font-weight: 600;
     font-size: 2rem;
+    margin-top: 1em;
 }
 
 .title span {
@@ -78,6 +101,7 @@ nav a:focus , a:hover {
     display: block;
     font-size: 0.8em;
 }
+
 
 /* =========== media query ========== */
 
@@ -111,8 +135,77 @@ nav a:focus , a:hover {
     color: #fff;
 }
 
-.container {
-    width: 95%;
-    margin: 0 auto;
+/* =========== home-about ============ */
+
+.home-about-textbox {
+    background-color: #232323;
+    padding: 4em;
+    width: 100vw;
+    margin-left: -2.5%;
+    outline: 2px solid #00ff6c;
+    outline-offset: -2.5em;
+    color: #fff;
+    position: relative;
+}
+
+.home-about-textbox h1 {
+    color: #00ff6c;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.75em;
+    background: #232323;
+    padding: 0 0.25em;
+    
+}
+
+
+@media (min-width: 25rem)
+{
+    h1 {
+        font-size: 2rem;
+    }
+    .home-about-textbox {
+        padding: 5.5em;
+    }
+
+    .home-about-textbox h1 {
+        top: 0.6em;
+        padding: 0 0.35em;
+
+    }
+}
+
+@media (min-width: 60rem)
+{
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .home-about {
+        background-image: url(../img/who-we-are.jpg);
+        padding-bottom: 10em;
+    }
+
+    .home-about-textbox {
+        width: 50%;
+        padding: 6em;
+        top: -5em;
+        text-align: left;
+        outline-offset: -3.75em;
+        box-shadow: 0 0 4em 0 rgba(0,0,0,0.3)
+    }
+
+    .home-about-textbox h1 {
+        top: 0.75em;
+        left: 2em;
+        transform: translateX(0);
+    }
+
 }
 
