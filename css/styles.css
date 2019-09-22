@@ -38,6 +38,12 @@ p:last-of-type{
     max-width: 70em;
     margin: 0 auto;
 }
+.clearfix::after,
+section::after {
+    content: '';
+    display: block;
+    clear: both;
+}
 
 /* ============ button ============= */
 
@@ -53,12 +59,13 @@ p:last-of-type{
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.5em 1.75em;
-    border: 2px solid #00ff6c;
+    border: 2px solid;
     display: inline-block;
 }
 
 .button-accent {
     color: #00ff6c;
+    border-color: #00ff6c;
 }
 
 .button-small {
@@ -69,6 +76,16 @@ p:last-of-type{
 .button-accent:hover, .button-accent:focus {
     color: #232323;
     background: #00ff6c;
+}
+
+.button-dark {
+    color: #232323;
+    border-color: #232323;
+}
+
+.button-dark:hover, .button-dark:focus {
+    color: #00ff6c;
+    background: #232323;
 }
 
 /* =========== header =========== */
@@ -227,7 +244,6 @@ nav a:focus , a:hover {
         left: 2em;
         transform: translateX(0);
     }
-
 }
 
 /* ================== portfolio ============== */
@@ -291,3 +307,12 @@ nav a:focus , a:hover {
     }
 }
 
+/* ============== cta ============ */
+.cta {
+    background: #00ff6c;
+    padding: 5em 0;
+}
+
+.title-cta {
+    margin: 0 0 0.5em ;
+}
