@@ -341,7 +341,6 @@ nav a:focus , a:hover {
 
 @media (min-width: 60rem) 
 {   
-    
     .port-item {
         width: 33.333334%;
         overflow: hidden;
@@ -380,4 +379,10 @@ footer {
     list-style-type: none;
 }
 
+@media (min-width: 60rem) 
+{   
+    footer li {
+        font-size: 1.2rem;
+    }
+}
     
