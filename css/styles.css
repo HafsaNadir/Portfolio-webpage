@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-    transition: all ease-in-out 250ms;
+    /* transition: all ease-in-out 250ms; */
 }
 
 body {
@@ -38,8 +38,10 @@ p:last-of-type{
     max-width: 70em;
     margin: 0 auto;
 }
+
 .clearfix::after,
-section::after {
+section::after ,
+footer::after {
     content: '';
     display: block;
     clear: both;
@@ -117,6 +119,52 @@ nav a {
 
 nav a:focus , a:hover {
     color: #ddd;
+}
+
+/* =========== column system ========== */
+
+[class^= col-]
+{
+    width: 100%;
+    margin-top: 1em;
+}
+
+[class^= col-]:first-child
+{
+    margin-top: 0;
+    padding: 0 0.5em;
+}
+
+.col-1 {
+    width: 33.33334%;
+    float: left;
+    padding-left: 0.5em;
+}
+
+@media(min-width: 40rem)
+{
+    [class^=col-] {
+        float: left;
+        padding: 0 0.5em;
+        margin-top: 0;
+    }
+
+    [class^=col-]:first-child{
+        padding-left: 1em;  
+        padding-right: 1em;   
+    }
+
+    [class^=col-]:last-child {
+        padding-right: 0;
+    }
+
+    .col-3 {
+        width: 50%;
+    }
+
+    .col-1 {
+        width: 16.6666%
+    }
 }
 
 /* ============= typography ========= */
@@ -332,3 +380,4 @@ footer {
     list-style-type: none;
 }
 
+    
