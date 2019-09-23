@@ -17,21 +17,6 @@ img {
     height: auto;
 }
 
-h1 {
-    font-weight: 300;
-    font-size: 1.7rem;
-    margin-top: 0;
-}
-
-p {
-    margin-top: 0;
-    line-height: 1.5;
-}
-
-p:last-of-type{
-    margin-bottom: 0;
-}
-
 .container {
     /* width: 95%; */
     width: 100%;
@@ -48,13 +33,6 @@ footer::after {
 }
 
 /* ============ button ============= */
-
-@media(min-width: 60rem)
-{
-    .button {
-        font-size: 1.5rem;
-    }
-}
 
 .button {
     font-size: 1.1rem;
@@ -90,6 +68,13 @@ footer::after {
     background: #232323;
 }
 
+@media(min-width: 60rem)
+{
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
 /* =========== header =========== */
 
 header{
@@ -119,6 +104,20 @@ nav a {
 
 nav a:focus , a:hover {
     color: #ddd;
+}
+
+@media(min-width: 60rem)
+{
+    .logo {
+        float: left;
+    }
+    nav {
+        float: right;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
 }
 
 /* =========== column system ========== */
@@ -169,6 +168,21 @@ nav a:focus , a:hover {
 
 /* ============= typography ========= */
 
+h1 {
+    font-weight: 300;
+    font-size: 1.7rem;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+p:last-of-type{
+    margin-bottom: 0;
+}
+
 .title {
     margin-bottom: 2em;
     font-weight: 600;
@@ -182,34 +196,44 @@ nav a:focus , a:hover {
     display: block;
     font-size: 0.8em;
 }
+@media (min-width: 25rem)
+{
+    h1 {
+        font-size: 2rem;
+    }
+}
 
-/* =========== media query ========== */
+@media (max-width: 25rem)
+{
+    h1 {
+        font-size: 1.3rem;
+    }
+}
 
 @media(min-width: 60rem)
 {
     .title {
         font-size: 3.7rem;
     }
-    .logo {
-        float: left;
-    }
-    nav {
-        float: right;
-    }
-    .home-hero {
-        height: 100vh;
+
+    h1 {
+        font-size: 2.5rem;
     }
 
-    .button {
-        font-size: 1.5rem;
-    }
-
-    nav a {
+    p {
         font-size: 1.2rem;
+        line-height: 1.6;
     }
 }
 
 /* ============= home-hero ========== */
+
+@media(min-width: 60rem)
+{
+    .home-hero {
+        height: 100vh;
+    }
+}
 
 .home-hero {
     background-image: url(../img/hero-bg.jpg);
@@ -239,16 +263,11 @@ nav a:focus , a:hover {
     transform: translateX(-50%);
     top: 0.75em;
     background: #232323;
-    padding: 0.5em;
-    
+    padding: 0.5em;    
 }
-
 
 @media (min-width: 25rem)
 {
-    h1 {
-        font-size: 2rem;
-    }
     .home-about-textbox {
         padding: 5.5em;
     }
@@ -262,15 +281,6 @@ nav a:focus , a:hover {
 
 @media (min-width: 60rem)
 {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-        line-height: 1.6;
-    }
-
     .home-about {
         background-image: url(../img/who-we-are.jpg);   
         padding-bottom: 10em;
@@ -356,6 +366,7 @@ nav a:focus , a:hover {
 }
 
 /* ============== cta ============ */
+
 .cta {
     background: #00ff6c;
     padding: 5em 0;
