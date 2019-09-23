@@ -3,7 +3,7 @@
 
 * {
     box-sizing: border-box;
-    /* transition: all ease-in-out 250ms; */
+    transition: all ease-in-out 250ms;
 }
 
 body {
@@ -208,6 +208,11 @@ p:last-of-type{
     h1 {
         font-size: 1.3rem;
     }
+
+    p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
 }
 
 @media(min-width: 60rem)
@@ -279,6 +284,14 @@ p:last-of-type{
     }
 }
 
+@media (max-width: 25rem)
+{
+    .home-about-textbox h1 {
+        top: 1.2em;
+        padding: 0 0.35em;
+
+    }
+}
 @media (min-width: 60rem)
 {
     .home-about {
@@ -397,3 +410,9 @@ footer {
     }
 }
     
+@media (max-width: 25rem)
+{
+    footer li {
+        font-size: 0.8rem;
+    }
+}
